@@ -1,0 +1,55 @@
+/* Custom keyframe animations — imported only by components that need them */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes widthExpand {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5rem;
+    }
+}
+
+.anim-fade-up {
+    animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.anim-fade-up-d1 {
+    animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s both;
+}
+
+.anim-fade-up-d2 {
+    animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.30s both;
+}
+
+.anim-fade-up-d3 {
+    animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.45s both;
+}
+
+.anim-width-expand {
+    animation: widthExpand 0.6s ease-out 0.6s both;
+}
